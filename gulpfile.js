@@ -6,9 +6,11 @@ const gutil = require('gulp-util')
 const sourcemaps = require('gulp-sourcemaps')
 const source = 'process/css/'
 const dest = 'builds/nextgen/'
+const githubPageDesc = 'docs/'
 
 gulp.task('html', async function() {
   gulp.src(dest + '*.html')
+  gulp.src(githubPageDesc + '*.html')
 })
 
 /**  generate sourcemap, import css partials with '_' prefix  */
@@ -25,6 +27,7 @@ gulp.task('css', async function() {
     .on('error', gutil.log)
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(dest + 'css'))
+    .pipe(gulp.dest(githubPageDesc + 'css'))
 })
 
 /**  watch for html and css changes  */
