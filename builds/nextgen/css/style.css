@@ -229,6 +229,8 @@ h6 {
             transform: rotateZ(15deg) scale(.8);
     -webkit-animation: videoin 1s;
             animation: videoin 1s;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
   }
 }.feature {
 
@@ -300,6 +302,8 @@ h6 {
             transform: rotateZ(-15deg) scale(.8);
     -webkit-animation: videoin-reverse 1s;
             animation: videoin-reverse 1s;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
   }.feature:nth-of-type(2n) {
 
     /* .feature-phone */
