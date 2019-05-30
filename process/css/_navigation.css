@@ -1,0 +1,40 @@
+.nav {
+  @apply --container-standard;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+
+  @media (--viewport-small) {
+    flex-direction: row;
+  }
+
+  & .branding {
+      margin-left: auto;
+      width: 80px;
+
+      @media (--viewport-small) {
+        width: 60px;
+      }
+  }
+
+  & .navbar {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      @media (--viewport-small) {
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+
+      & a {
+          padding-left: calc(var(--font-size-base)*0.8);
+          font-size: calc(var(--font-size-base)*0.9);
+          text-align:right;
+
+          &:hover{
+              color: color(var(--orange) saturation(+20%))
+          }
+      }
+  }
+}

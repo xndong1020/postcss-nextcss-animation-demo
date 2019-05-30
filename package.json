@@ -1,0 +1,18 @@
+{
+  "name": "nextgen",
+  "version": "1.0.0",
+  "description": "A repository for Next Generation CSS with PostCSS and CSSNext",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-util": "^3.0.8",
+    "gulp-webserver": "^0.9.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-partial-import": "^4.1.0"
+  }
+}
